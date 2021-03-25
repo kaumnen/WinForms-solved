@@ -1,7 +1,7 @@
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-### Remember every pull request has to be reviewed, please be patient.
+### Remember that every pull request has to be reviewed, please be patient.
 
 # Main rules
 1. Use comments
