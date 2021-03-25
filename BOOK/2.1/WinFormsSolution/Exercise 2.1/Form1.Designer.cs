@@ -116,6 +116,7 @@ namespace Exercise_2._1
             this.OutputTextBox.Location = new System.Drawing.Point(41, 304);
             this.OutputTextBox.Multiline = true;
             this.OutputTextBox.Name = "OutputTextBox";
+            this.OutputTextBox.ReadOnly = true;
             this.OutputTextBox.Size = new System.Drawing.Size(383, 86);
             this.OutputTextBox.TabIndex = 8;
             // 
