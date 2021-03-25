@@ -28,5 +28,16 @@ namespace Exercise_2._1
 
             OutputTextBox.Text = output.ToString();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void GitHubLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://github.komnen.xyz");
+            GitHubLinkLabel.LinkVisited = true;
+        }
     }
 }

@@ -137,6 +137,7 @@ namespace Exercise_2._1
             this.GitHubLinkLabel.TabIndex = 10;
             this.GitHubLinkLabel.TabStop = true;
             this.GitHubLinkLabel.Text = "GitHub";
+            this.GitHubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHubLinkLabel_LinkClicked);
             // 
             // imageList1
             // 
@@ -162,6 +163,7 @@ namespace Exercise_2._1
             this.ExitButton.TabIndex = 12;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Form1
             // 
