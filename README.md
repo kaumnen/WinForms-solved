@@ -4,4 +4,4 @@
 2. Make changes
 4. Submit pull request
 
-### For contribution guidelines, please read CONTRIBUTIONS.md
+### For contribution guidelines, please read [CONTRIBUTIONS.md](https://github.com/komnen0v1c/WinForms_ITS-solved/blob/main/CONTRIBUTING.md)
