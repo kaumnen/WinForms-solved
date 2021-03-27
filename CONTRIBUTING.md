@@ -35,6 +35,10 @@
 
 6. Make a new project from VisualStudio's start window inside that new folder. 
 
+	7. Project name template - `Exercise {numeration}`, e.g. Exercise 2.1
+	
+	9. Set `Place solution and project in the same directory` field **unchecked**, and set solution name to `WinFormsSolution`
+
 8. Make a pull request, thank you!
 
 ## Branch naming advice
