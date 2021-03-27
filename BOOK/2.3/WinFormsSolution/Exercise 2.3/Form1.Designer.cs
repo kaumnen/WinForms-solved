@@ -35,12 +35,14 @@ namespace Exercise_2._3
             this.HideOrderCheckBox = new System.Windows.Forms.CheckBox();
             this.SendButton = new System.Windows.Forms.Button();
             this.OrderRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.MealsGroupBox = new System.Windows.Forms.GroupBox();
+            this.MealsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // BreakfastCheckBox
             // 
             this.BreakfastCheckBox.AutoSize = true;
-            this.BreakfastCheckBox.Location = new System.Drawing.Point(26, 33);
+            this.BreakfastCheckBox.Location = new System.Drawing.Point(6, 40);
             this.BreakfastCheckBox.Name = "BreakfastCheckBox";
             this.BreakfastCheckBox.Size = new System.Drawing.Size(71, 17);
             this.BreakfastCheckBox.TabIndex = 0;
@@ -50,7 +52,7 @@ namespace Exercise_2._3
             // LunchCheckBox
             // 
             this.LunchCheckBox.AutoSize = true;
-            this.LunchCheckBox.Location = new System.Drawing.Point(26, 98);
+            this.LunchCheckBox.Location = new System.Drawing.Point(6, 93);
             this.LunchCheckBox.Name = "LunchCheckBox";
             this.LunchCheckBox.Size = new System.Drawing.Size(56, 17);
             this.LunchCheckBox.TabIndex = 1;
@@ -60,7 +62,7 @@ namespace Exercise_2._3
             // DinnerCheckBox
             // 
             this.DinnerCheckBox.AutoSize = true;
-            this.DinnerCheckBox.Location = new System.Drawing.Point(26, 173);
+            this.DinnerCheckBox.Location = new System.Drawing.Point(6, 152);
             this.DinnerCheckBox.Name = "DinnerCheckBox";
             this.DinnerCheckBox.Size = new System.Drawing.Size(57, 17);
             this.DinnerCheckBox.TabIndex = 2;
@@ -76,6 +78,7 @@ namespace Exercise_2._3
             this.HideOrderCheckBox.TabIndex = 3;
             this.HideOrderCheckBox.Text = "Hide order";
             this.HideOrderCheckBox.UseVisualStyleBackColor = true;
+            this.HideOrderCheckBox.CheckedChanged += new System.EventHandler(this.HideOrderCheckBox_CheckedChanged);
             // 
             // SendButton
             // 
@@ -85,6 +88,7 @@ namespace Exercise_2._3
             this.SendButton.TabIndex = 4;
             this.SendButton.Text = "Send";
             this.SendButton.UseVisualStyleBackColor = true;
+            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
             // OrderRichTextBox
             // 
@@ -94,19 +98,31 @@ namespace Exercise_2._3
             this.OrderRichTextBox.TabIndex = 5;
             this.OrderRichTextBox.Text = "";
             // 
+            // MealsGroupBox
+            // 
+            this.MealsGroupBox.Controls.Add(this.BreakfastCheckBox);
+            this.MealsGroupBox.Controls.Add(this.LunchCheckBox);
+            this.MealsGroupBox.Controls.Add(this.DinnerCheckBox);
+            this.MealsGroupBox.Location = new System.Drawing.Point(12, 12);
+            this.MealsGroupBox.Name = "MealsGroupBox";
+            this.MealsGroupBox.Size = new System.Drawing.Size(81, 195);
+            this.MealsGroupBox.TabIndex = 6;
+            this.MealsGroupBox.TabStop = false;
+            this.MealsGroupBox.Text = "Meals";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 315);
+            this.ClientSize = new System.Drawing.Size(344, 285);
+            this.Controls.Add(this.MealsGroupBox);
             this.Controls.Add(this.OrderRichTextBox);
             this.Controls.Add(this.SendButton);
             this.Controls.Add(this.HideOrderCheckBox);
-            this.Controls.Add(this.DinnerCheckBox);
-            this.Controls.Add(this.LunchCheckBox);
-            this.Controls.Add(this.BreakfastCheckBox);
             this.Name = "Form1";
             this.Text = "ChechBox";
+            this.MealsGroupBox.ResumeLayout(false);
+            this.MealsGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +136,7 @@ namespace Exercise_2._3
         private System.Windows.Forms.CheckBox HideOrderCheckBox;
         private System.Windows.Forms.Button SendButton;
         private System.Windows.Forms.RichTextBox OrderRichTextBox;
+        private System.Windows.Forms.GroupBox MealsGroupBox;
     }
 }
 
