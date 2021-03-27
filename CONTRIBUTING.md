@@ -1,4 +1,5 @@
 
+
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
 ### Remember that every pull request has to be reviewed, please be patient.
@@ -19,3 +20,19 @@
 	
 5. If solution refers to problem found on internet, make appropriate folder inside main folder named **INTERNET**
 	At the top (after .NET version and version number), add text, photo of a problem and URL, if applicable
+# Step by step
+
+1. Fork the project
+ 
+3. Clone it on your local machine
+ 
+5. Depending on problem origin, make a folder in appropriate *main folder* (BOOK, INTERNET)
+ 
+	4. If problem is from a book, name it after problem num, e.g. 2.1, 2.2 etc.
+	 
+	6. If problem is from internet, name it after problem name
+
+
+6. Make a new project from VisualStudio's start window inside that new folder. 
+
+8. Make a pull request, thank you!
