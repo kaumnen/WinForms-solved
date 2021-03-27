@@ -36,3 +36,8 @@
 6. Make a new project from VisualStudio's start window inside that new folder. 
 
 8. Make a pull request, thank you!
+
+## Branch naming advice
+For book problems, please use `{problem_num}_{page its on}` e.g. `2.1_08`
+
+For internet problems, please use name of exercise
