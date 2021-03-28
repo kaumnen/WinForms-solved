@@ -24,8 +24,10 @@ namespace Exercise_2._4
             ChoiceTextBox.Text = $"You have chosen {rb.Text} transportation type!";
         }
 
+        //make one universal event for all radio buttons
         private void TransportationRadioButtonClickedUniversal_CheckedChanged(object sender, EventArgs e)
         {
+            //depending on sender change ChoiceTextBox's text
             WriteToTextBox((RadioButton)sender);
         }
     }
