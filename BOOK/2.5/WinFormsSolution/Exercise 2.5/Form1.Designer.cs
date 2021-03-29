@@ -53,6 +53,7 @@ namespace Exercise_2._5
             this.NonModalFormButton.TabIndex = 1;
             this.NonModalFormButton.Text = "Go to non-modal form";
             this.NonModalFormButton.UseVisualStyleBackColor = true;
+            this.NonModalFormButton.Click += new System.EventHandler(this.NonModalFormButton_Click);
             // 
             // ModalFormButton
             // 
@@ -62,6 +63,7 @@ namespace Exercise_2._5
             this.ModalFormButton.TabIndex = 2;
             this.ModalFormButton.Text = "Go to modal form";
             this.ModalFormButton.UseVisualStyleBackColor = true;
+            this.ModalFormButton.Click += new System.EventHandler(this.ModalFormButton_Click);
             // 
             // Form1
             // 

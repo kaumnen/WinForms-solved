@@ -16,5 +16,19 @@ namespace Exercise_2._5
         {
             InitializeComponent();
         }
+
+        private void NonModalFormButton_Click(object sender, EventArgs e)
+        {
+            NonmodalForm nf = new NonmodalForm();
+
+            nf.Show();
+        }
+
+        private void ModalFormButton_Click(object sender, EventArgs e)
+        {
+            NonmodalForm nf = new NonmodalForm();
+            nf.ShowDialog();
+            nf.Dispose();
+        }
     }
 }
