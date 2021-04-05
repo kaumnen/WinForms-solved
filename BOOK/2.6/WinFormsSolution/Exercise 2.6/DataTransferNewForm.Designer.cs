@@ -70,7 +70,7 @@ namespace Exercise_2._6
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.newFormDataTextBox);
             this.Name = "DataTransferNewForm";
-            this.Text = "DataTransferNewForm";
+            this.Text = "Data transfer - new";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataTransferNewForm_FormClosing);
             this.Load += new System.EventHandler(this.DataTransferNewForm_Load);
             this.ResumeLayout(false);

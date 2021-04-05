@@ -23,6 +23,7 @@ namespace Exercise_2._6
 
             DataTransferNewForm nf = new DataTransferNewForm();
 
+            //show nf modal form, if cancel is clicked, or if ok is clicked, do stuff
             if (nf.ShowDialog() == DialogResult.Cancel)
             {
                 StartingTextBox.Text = "On last form you selected cancel button!";
