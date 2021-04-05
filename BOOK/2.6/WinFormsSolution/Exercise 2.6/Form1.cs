@@ -16,5 +16,23 @@ namespace Exercise_2._6
         {
             InitializeComponent();
         }
+
+        private void OpenNewFormButton_Click(object sender, EventArgs e)
+        {
+            DataModel.Data = StartingTextBox.Text;
+
+            DataTransferNewForm nf = new DataTransferNewForm();
+
+            if (nf.ShowDialog() == DialogResult.Cancel)
+            {
+                StartingTextBox.Text = "On last form you selected cancel button!";
+            }
+            else
+            {
+                StartingTextBox.Text = DataModel.Data;
+            }
+
+            nf.Dispose();
+        }
     }
 }

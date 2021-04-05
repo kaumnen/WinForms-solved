@@ -48,6 +48,7 @@ namespace Exercise_2._6
             this.OpenNewFormButton.TabIndex = 1;
             this.OpenNewFormButton.Text = "Open new form";
             this.OpenNewFormButton.UseVisualStyleBackColor = true;
+            this.OpenNewFormButton.Click += new System.EventHandler(this.OpenNewFormButton_Click);
             // 
             // Form1
             // 

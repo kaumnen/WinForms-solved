@@ -43,6 +43,7 @@ namespace Exercise_2._6
             // 
             // OKButton
             // 
+            this.OKButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.OKButton.Location = new System.Drawing.Point(40, 120);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
@@ -52,6 +53,7 @@ namespace Exercise_2._6
             // 
             // CancelButton
             // 
+            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.CancelButton.Location = new System.Drawing.Point(224, 120);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
@@ -69,6 +71,8 @@ namespace Exercise_2._6
             this.Controls.Add(this.newFormDataTextBox);
             this.Name = "DataTransferNewForm";
             this.Text = "DataTransferNewForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DataTransferNewForm_FormClosing);
+            this.Load += new System.EventHandler(this.DataTransferNewForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

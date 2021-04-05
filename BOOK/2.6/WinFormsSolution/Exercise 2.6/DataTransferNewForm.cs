@@ -16,5 +16,15 @@ namespace Exercise_2._6
         {
             InitializeComponent();
         }
+
+        private void DataTransferNewForm_Load(object sender, EventArgs e)
+        {
+            newFormDataTextBox.Text = DataModel.Data;
+        }
+
+        private void DataTransferNewForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DataModel.Data = newFormDataTextBox.Text;
+        }
     }
 }
