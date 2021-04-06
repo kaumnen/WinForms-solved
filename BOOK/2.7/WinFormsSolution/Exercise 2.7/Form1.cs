@@ -16,5 +16,21 @@ namespace Exercise_2._7
         {
             InitializeComponent();
         }
+
+        private void ModalButton_Click(object sender, EventArgs e)
+        {
+            NewForm nf = new NewForm();
+            InfoModel.Information = "You have opened Modal form!";
+
+            nf.ShowDialog();
+        }
+
+        private void NonModalButton_Click(object sender, EventArgs e)
+        {
+            NewForm nf = new NewForm();
+            InfoModel.Information = "You have opened Non-Modal form!";
+
+            nf.Show();
+        }
     }
 }

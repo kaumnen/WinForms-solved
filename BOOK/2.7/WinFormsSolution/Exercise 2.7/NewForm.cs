@@ -16,5 +16,15 @@ namespace Exercise_2._7
         {
             InitializeComponent();
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void NewForm_Load(object sender, EventArgs e)
+        {
+            InformationLabel.Text = InfoModel.Information;
+        }
     }
 }
