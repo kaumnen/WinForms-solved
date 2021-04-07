@@ -88,6 +88,7 @@ namespace Exercise_2._8
             this.ColorButton.TabIndex = 4;
             this.ColorButton.Text = "Color";
             this.ColorButton.UseVisualStyleBackColor = true;
+            this.ColorButton.Click += new System.EventHandler(this.ColorButton_Click);
             // 
             // FontButton
             // 

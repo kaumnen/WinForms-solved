@@ -60,5 +60,21 @@ namespace Exercise_2._8
                 TextRichTextBox.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
             }
         }
+
+        private void ColorButton_Click(object sender, EventArgs e)
+        {
+            if (TextRichTextBox.SelectedText.Length > 0)
+            {
+                if (colorDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    TextRichTextBox.SelectionColor = colorDialog1.Color;
+                }
+            }
+            else
+            {
+                MessageBox.Show("You have to select a text in order to change its color!");
+            }
+            
+        }
     }
 }
