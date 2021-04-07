@@ -35,6 +35,11 @@ namespace Exercise_2._8
             this.OpenButton = new System.Windows.Forms.Button();
             this.ColorButton = new System.Windows.Forms.Button();
             this.FontButton = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // TextRichTextBox
@@ -90,6 +95,10 @@ namespace Exercise_2._8
             this.FontButton.Text = "Font";
             this.FontButton.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,6 +124,11 @@ namespace Exercise_2._8
         private System.Windows.Forms.Button OpenButton;
         private System.Windows.Forms.Button ColorButton;
         private System.Windows.Forms.Button FontButton;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
