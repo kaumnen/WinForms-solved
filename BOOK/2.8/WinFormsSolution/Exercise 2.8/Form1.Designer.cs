@@ -98,6 +98,7 @@ namespace Exercise_2._8
             this.FontButton.TabIndex = 5;
             this.FontButton.Text = "Font";
             this.FontButton.UseVisualStyleBackColor = true;
+            this.FontButton.Click += new System.EventHandler(this.FontButton_Click);
             // 
             // openFileDialog1
             // 

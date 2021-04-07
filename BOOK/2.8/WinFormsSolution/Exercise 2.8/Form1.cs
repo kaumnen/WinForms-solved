@@ -76,5 +76,20 @@ namespace Exercise_2._8
             }
             
         }
+
+        private void FontButton_Click(object sender, EventArgs e)
+        {
+            if (TextRichTextBox.SelectedText.Length > 0)
+            {
+                if (fontDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    TextRichTextBox.SelectionFont = fontDialog1.Font;
+                }
+            }
+            else
+            {
+                MessageBox.Show("You have to select a text in order to change its font!");
+            }
+        }
     }
 }
