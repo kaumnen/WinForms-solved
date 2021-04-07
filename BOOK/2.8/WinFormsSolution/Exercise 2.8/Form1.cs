@@ -36,5 +36,19 @@ namespace Exercise_2._8
             }
         }
 
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "rtf files|*.rtf";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (TextRichTextBox.Text != "")
+                {
+                    TextRichTextBox.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                    TextRichTextBox.Clear();
+                    MessageBox.Show("Text has been saved!");
+                }
+            }
+        }
     }
 }
