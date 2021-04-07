@@ -112,6 +112,7 @@ namespace Exercise_2._8
             this.Controls.Add(this.TextRichTextBox);
             this.Name = "Form1";
             this.Text = "Standard Windows dialogs";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

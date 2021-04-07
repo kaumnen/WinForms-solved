@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Exercise_2._8
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.RootFolder = Environment.SpecialFolder.MyComputer;
+            openFileDialog1.InitialDirectory = @"C:\Temp";
+            saveFileDialog1.InitialDirectory = @"C:\Temp";
+            TextRichTextBox.Font = new Font("Calibri", 11);
         }
     }
 }
