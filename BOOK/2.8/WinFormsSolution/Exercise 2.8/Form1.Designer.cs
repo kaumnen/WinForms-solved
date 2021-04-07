@@ -58,6 +58,7 @@ namespace Exercise_2._8
             this.ChangeFolderButton.TabIndex = 1;
             this.ChangeFolderButton.Text = "Change Folder";
             this.ChangeFolderButton.UseVisualStyleBackColor = true;
+            this.ChangeFolderButton.Click += new System.EventHandler(this.ChangeFolderButton_Click);
             // 
             // SaveButton
             // 

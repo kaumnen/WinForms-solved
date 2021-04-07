@@ -25,5 +25,16 @@ namespace Exercise_2._8
             saveFileDialog1.InitialDirectory = @"C:\Temp";
             TextRichTextBox.Font = new Font("Calibri", 11);
         }
+
+        private void ChangeFolderButton_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string newFolder = folderBrowserDialog1.SelectedPath;
+                openFileDialog1.InitialDirectory = newFolder;
+                saveFileDialog1.InitialDirectory = newFolder;
+            }
+        }
+
     }
 }
