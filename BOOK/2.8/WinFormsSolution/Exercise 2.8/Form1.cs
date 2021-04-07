@@ -50,5 +50,15 @@ namespace Exercise_2._8
                 }
             }
         }
+
+        private void OpenButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "rtf files|*.rtf";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                TextRichTextBox.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
+            }
+        }
     }
 }

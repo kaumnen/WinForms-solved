@@ -78,6 +78,7 @@ namespace Exercise_2._8
             this.OpenButton.TabIndex = 3;
             this.OpenButton.Text = "Open";
             this.OpenButton.UseVisualStyleBackColor = true;
+            this.OpenButton.Click += new System.EventHandler(this.OpenButton_Click);
             // 
             // ColorButton
             // 
