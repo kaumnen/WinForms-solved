@@ -37,5 +37,26 @@ namespace Exercise_2._9
             TextRichTextBox.SelectionFont = newFont;
             TextRichTextBox.Focus();
         }
+
+        private void ItalicButton_Click(object sender, EventArgs e)
+        {
+            Font newFont;
+            Font oldFont;
+
+            oldFont = TextRichTextBox.SelectionFont;
+
+            if (oldFont.Italic)
+            {
+                newFont = new Font(oldFont, oldFont.Style & ~FontStyle.Italic);
+            }
+            else
+            {
+                newFont = new Font(oldFont, oldFont.Style | FontStyle.Italic);
+            }
+
+            //setting new font and focus on text area
+            TextRichTextBox.SelectionFont = newFont;
+            TextRichTextBox.Focus();
+        }
     }
 }

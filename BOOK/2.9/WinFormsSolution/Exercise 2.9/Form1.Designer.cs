@@ -66,6 +66,7 @@ namespace Exercise_2._9
             this.ItalicButton.TabIndex = 2;
             this.ItalicButton.Text = "Italic";
             this.ItalicButton.UseVisualStyleBackColor = true;
+            this.ItalicButton.Click += new System.EventHandler(this.ItalicButton_Click);
             // 
             // UnderlineButton
             // 
