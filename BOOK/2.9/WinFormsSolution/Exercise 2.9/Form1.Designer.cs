@@ -47,6 +47,7 @@ namespace Exercise_2._9
             this.TextRichTextBox.Size = new System.Drawing.Size(544, 209);
             this.TextRichTextBox.TabIndex = 0;
             this.TextRichTextBox.Text = "";
+            this.TextRichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.TextRichTextBox_LinkClicked);
             // 
             // BoldButton
             // 

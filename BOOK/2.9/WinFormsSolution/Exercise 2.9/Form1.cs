@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -136,7 +137,7 @@ namespace Exercise_2._9
                 TextRichTextBox.LoadFile(@"../../Test.rtf");
                 MessageBox.Show("The file has been loaded!");
             }
-            catch (System.IO.FileNotFoundException fnfe)
+            catch (FileNotFoundException)
             {
                 MessageBox.Show("File has not been saved yet!");
             }
@@ -153,6 +154,11 @@ namespace Exercise_2._9
             {
                 MessageBox.Show(fnfe.Message);
             }
+        }
+
+        private void TextRichTextBox_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            Process.Start(e.LinkText);
         }
     }
 }
