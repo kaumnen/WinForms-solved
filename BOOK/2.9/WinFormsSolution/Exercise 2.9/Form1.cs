@@ -127,5 +127,17 @@ namespace Exercise_2._9
 
             TextRichTextBox.SelectionFont = newFont;
         }
+
+        private void LoadButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TextRichTextBox.LoadFile(@"../../Test.rtf");
+            }
+            catch (System.IO.FileNotFoundException fnfe)
+            {
+                MessageBox.Show("File has not been saved yet!");
+            }
+        }
     }
 }

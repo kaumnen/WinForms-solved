@@ -96,6 +96,7 @@ namespace Exercise_2._9
             this.LoadButton.TabIndex = 5;
             this.LoadButton.Text = "Load";
             this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
             // SaveButton
             // 
