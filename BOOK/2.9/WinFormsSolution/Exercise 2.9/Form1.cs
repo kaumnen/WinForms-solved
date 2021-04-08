@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -137,6 +138,18 @@ namespace Exercise_2._9
             catch (System.IO.FileNotFoundException fnfe)
             {
                 MessageBox.Show("File has not been saved yet!");
+            }
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TextRichTextBox.SaveFile(@"../../Test.rtf", RichTextBoxStreamType.RichText);
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                MessageBox.Show(fnfe.Message);
             }
         }
     }
