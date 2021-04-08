@@ -58,5 +58,26 @@ namespace Exercise_2._9
             TextRichTextBox.SelectionFont = newFont;
             TextRichTextBox.Focus();
         }
+
+        private void UnderlineButton_Click(object sender, EventArgs e)
+        {
+            Font newFont;
+            Font oldFont;
+
+            oldFont = TextRichTextBox.SelectionFont;
+
+            if (oldFont.Underline)
+            {
+                newFont = new Font(oldFont, oldFont.Style & ~FontStyle.Underline);
+            }
+            else
+            {
+                newFont = new Font(oldFont, oldFont.Style | FontStyle.Underline);
+            }
+
+            //setting new font and focus on text area
+            TextRichTextBox.SelectionFont = newFont;
+            TextRichTextBox.Focus();
+        }
     }
 }

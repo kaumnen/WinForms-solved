@@ -76,6 +76,7 @@ namespace Exercise_2._9
             this.UnderlineButton.TabIndex = 3;
             this.UnderlineButton.Text = "Underline";
             this.UnderlineButton.UseVisualStyleBackColor = true;
+            this.UnderlineButton.Click += new System.EventHandler(this.UnderlineButton_Click);
             // 
             // CenterButton
             // 
