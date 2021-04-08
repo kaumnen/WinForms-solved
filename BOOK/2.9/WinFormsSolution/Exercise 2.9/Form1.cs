@@ -134,6 +134,7 @@ namespace Exercise_2._9
             try
             {
                 TextRichTextBox.LoadFile(@"../../Test.rtf");
+                MessageBox.Show("The file has been loaded!");
             }
             catch (System.IO.FileNotFoundException fnfe)
             {
@@ -146,6 +147,7 @@ namespace Exercise_2._9
             try
             {
                 TextRichTextBox.SaveFile(@"../../Test.rtf", RichTextBoxStreamType.RichText);
+                MessageBox.Show("The file has been saved!");
             }
             catch (FileNotFoundException fnfe)
             {
