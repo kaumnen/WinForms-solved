@@ -86,6 +86,7 @@ namespace Exercise_2._9
             this.CenterButton.TabIndex = 4;
             this.CenterButton.Text = "Center";
             this.CenterButton.UseVisualStyleBackColor = true;
+            this.CenterButton.Click += new System.EventHandler(this.CenterButton_Click);
             // 
             // LoadButton
             // 
@@ -111,6 +112,7 @@ namespace Exercise_2._9
             this.SizeTextBox.Name = "SizeTextBox";
             this.SizeTextBox.Size = new System.Drawing.Size(100, 20);
             this.SizeTextBox.TabIndex = 7;
+            this.SizeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SizeTextBox_KeyPress);
             // 
             // label1
             // 

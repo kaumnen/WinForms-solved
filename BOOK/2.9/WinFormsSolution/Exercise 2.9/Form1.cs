@@ -79,5 +79,53 @@ namespace Exercise_2._9
             TextRichTextBox.SelectionFont = newFont;
             TextRichTextBox.Focus();
         }
+
+        private void CenterButton_Click(object sender, EventArgs e)
+        {
+            if (TextRichTextBox.SelectionAlignment == HorizontalAlignment.Center)
+            {
+                TextRichTextBox.SelectionAlignment = HorizontalAlignment.Left;
+            }
+            else
+            {
+                TextRichTextBox.SelectionAlignment = HorizontalAlignment.Center;
+            }
+
+            TextRichTextBox.Focus();
+        }
+
+        private void SizeTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar < 45 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 13)
+            {
+                e.Handled = true;
+            }
+
+            else if (e.KeyChar == 13)
+            {
+                TextBox txt = (TextBox)sender;
+
+                if (txt.Text.Length > 0)
+                {
+                    ChangeFontSize(txt.Text);
+                }
+
+                e.Handled = true;
+                TextRichTextBox.Focus();
+            }
+        }
+
+        private void ChangeFontSize(string textSize)
+        {
+            float newSize = Convert.ToSingle(textSize);
+
+            FontFamily currentFontFamily;
+            Font newFont;
+
+            currentFontFamily = TextRichTextBox.SelectionFont.FontFamily;
+            newFont = new Font(currentFontFamily, newSize);
+
+            TextRichTextBox.SelectionFont = newFont;
+        }
     }
 }
