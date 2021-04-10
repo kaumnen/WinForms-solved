@@ -68,5 +68,10 @@ namespace Exercise_2._10
             }
 
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
