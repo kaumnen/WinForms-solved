@@ -54,6 +54,7 @@ namespace Exercise_2._10
             // 
             // ApproveButton
             // 
+            this.ApproveButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ApproveButton.Location = new System.Drawing.Point(12, 127);
             this.ApproveButton.Name = "ApproveButton";
             this.ApproveButton.Size = new System.Drawing.Size(75, 23);
@@ -63,6 +64,7 @@ namespace Exercise_2._10
             // 
             // CancelButton
             // 
+            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.CancelButton.Location = new System.Drawing.Point(245, 127);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(75, 23);
@@ -81,6 +83,7 @@ namespace Exercise_2._10
             this.Controls.Add(this.label1);
             this.Name = "Confirmation";
             this.Text = "Confirmation";
+            this.Load += new System.EventHandler(this.Confirmation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

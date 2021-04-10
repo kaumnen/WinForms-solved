@@ -34,17 +34,17 @@ namespace Exercise_2._10
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.SurnameTextBox = new System.Windows.Forms.TextBox();
             this.AcademicGroupBox = new System.Windows.Forms.GroupBox();
-            this.ElementaryRadioButton = new System.Windows.Forms.RadioButton();
-            this.HighRadioButton = new System.Windows.Forms.RadioButton();
-            this.CollegeRadioButton = new System.Windows.Forms.RadioButton();
-            this.FacultyRadioButton = new System.Windows.Forms.RadioButton();
-            this.MagisterRadioButton = new System.Windows.Forms.RadioButton();
             this.PhDRadioButton = new System.Windows.Forms.RadioButton();
+            this.MagisterRadioButton = new System.Windows.Forms.RadioButton();
+            this.FacultyRadioButton = new System.Windows.Forms.RadioButton();
+            this.CollegeRadioButton = new System.Windows.Forms.RadioButton();
+            this.HighRadioButton = new System.Windows.Forms.RadioButton();
+            this.ElementaryRadioButton = new System.Windows.Forms.RadioButton();
             this.HobbiesGroupBox = new System.Windows.Forms.GroupBox();
-            this.SportCheckBox = new System.Windows.Forms.CheckBox();
-            this.BooksCheckBox = new System.Windows.Forms.CheckBox();
-            this.HangoutsCheckBox = new System.Windows.Forms.CheckBox();
             this.MoviesCheckBox = new System.Windows.Forms.CheckBox();
+            this.HangoutsCheckBox = new System.Windows.Forms.CheckBox();
+            this.BooksCheckBox = new System.Windows.Forms.CheckBox();
+            this.SportCheckBox = new System.Windows.Forms.CheckBox();
             this.SeeAllAcademicLinkLabel = new System.Windows.Forms.LinkLabel();
             this.AcademicLevelsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
@@ -101,49 +101,16 @@ namespace Exercise_2._10
             this.AcademicGroupBox.TabStop = false;
             this.AcademicGroupBox.Text = "Academic level";
             // 
-            // ElementaryRadioButton
+            // PhDRadioButton
             // 
-            this.ElementaryRadioButton.AutoSize = true;
-            this.ElementaryRadioButton.Location = new System.Drawing.Point(7, 20);
-            this.ElementaryRadioButton.Name = "ElementaryRadioButton";
-            this.ElementaryRadioButton.Size = new System.Drawing.Size(111, 17);
-            this.ElementaryRadioButton.TabIndex = 0;
-            this.ElementaryRadioButton.TabStop = true;
-            this.ElementaryRadioButton.Text = "Elementary school";
-            this.ElementaryRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // HighRadioButton
-            // 
-            this.HighRadioButton.AutoSize = true;
-            this.HighRadioButton.Location = new System.Drawing.Point(7, 43);
-            this.HighRadioButton.Name = "HighRadioButton";
-            this.HighRadioButton.Size = new System.Drawing.Size(81, 17);
-            this.HighRadioButton.TabIndex = 1;
-            this.HighRadioButton.TabStop = true;
-            this.HighRadioButton.Text = "High school";
-            this.HighRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // CollegeRadioButton
-            // 
-            this.CollegeRadioButton.AutoSize = true;
-            this.CollegeRadioButton.Location = new System.Drawing.Point(7, 67);
-            this.CollegeRadioButton.Name = "CollegeRadioButton";
-            this.CollegeRadioButton.Size = new System.Drawing.Size(60, 17);
-            this.CollegeRadioButton.TabIndex = 2;
-            this.CollegeRadioButton.TabStop = true;
-            this.CollegeRadioButton.Text = "College";
-            this.CollegeRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // FacultyRadioButton
-            // 
-            this.FacultyRadioButton.AutoSize = true;
-            this.FacultyRadioButton.Location = new System.Drawing.Point(7, 90);
-            this.FacultyRadioButton.Name = "FacultyRadioButton";
-            this.FacultyRadioButton.Size = new System.Drawing.Size(59, 17);
-            this.FacultyRadioButton.TabIndex = 3;
-            this.FacultyRadioButton.TabStop = true;
-            this.FacultyRadioButton.Text = "Faculty";
-            this.FacultyRadioButton.UseVisualStyleBackColor = true;
+            this.PhDRadioButton.AutoSize = true;
+            this.PhDRadioButton.Location = new System.Drawing.Point(7, 136);
+            this.PhDRadioButton.Name = "PhDRadioButton";
+            this.PhDRadioButton.Size = new System.Drawing.Size(52, 17);
+            this.PhDRadioButton.TabIndex = 5;
+            this.PhDRadioButton.TabStop = true;
+            this.PhDRadioButton.Text = "Ph.D.";
+            this.PhDRadioButton.UseVisualStyleBackColor = true;
             // 
             // MagisterRadioButton
             // 
@@ -156,16 +123,49 @@ namespace Exercise_2._10
             this.MagisterRadioButton.Text = "Magister";
             this.MagisterRadioButton.UseVisualStyleBackColor = true;
             // 
-            // PhDRadioButton
+            // FacultyRadioButton
             // 
-            this.PhDRadioButton.AutoSize = true;
-            this.PhDRadioButton.Location = new System.Drawing.Point(7, 136);
-            this.PhDRadioButton.Name = "PhDRadioButton";
-            this.PhDRadioButton.Size = new System.Drawing.Size(52, 17);
-            this.PhDRadioButton.TabIndex = 5;
-            this.PhDRadioButton.TabStop = true;
-            this.PhDRadioButton.Text = "Ph.D.";
-            this.PhDRadioButton.UseVisualStyleBackColor = true;
+            this.FacultyRadioButton.AutoSize = true;
+            this.FacultyRadioButton.Location = new System.Drawing.Point(7, 90);
+            this.FacultyRadioButton.Name = "FacultyRadioButton";
+            this.FacultyRadioButton.Size = new System.Drawing.Size(59, 17);
+            this.FacultyRadioButton.TabIndex = 3;
+            this.FacultyRadioButton.TabStop = true;
+            this.FacultyRadioButton.Text = "Faculty";
+            this.FacultyRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // CollegeRadioButton
+            // 
+            this.CollegeRadioButton.AutoSize = true;
+            this.CollegeRadioButton.Location = new System.Drawing.Point(7, 67);
+            this.CollegeRadioButton.Name = "CollegeRadioButton";
+            this.CollegeRadioButton.Size = new System.Drawing.Size(60, 17);
+            this.CollegeRadioButton.TabIndex = 2;
+            this.CollegeRadioButton.TabStop = true;
+            this.CollegeRadioButton.Text = "College";
+            this.CollegeRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // HighRadioButton
+            // 
+            this.HighRadioButton.AutoSize = true;
+            this.HighRadioButton.Location = new System.Drawing.Point(7, 43);
+            this.HighRadioButton.Name = "HighRadioButton";
+            this.HighRadioButton.Size = new System.Drawing.Size(81, 17);
+            this.HighRadioButton.TabIndex = 1;
+            this.HighRadioButton.TabStop = true;
+            this.HighRadioButton.Text = "High school";
+            this.HighRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ElementaryRadioButton
+            // 
+            this.ElementaryRadioButton.AutoSize = true;
+            this.ElementaryRadioButton.Location = new System.Drawing.Point(7, 20);
+            this.ElementaryRadioButton.Name = "ElementaryRadioButton";
+            this.ElementaryRadioButton.Size = new System.Drawing.Size(111, 17);
+            this.ElementaryRadioButton.TabIndex = 0;
+            this.ElementaryRadioButton.TabStop = true;
+            this.ElementaryRadioButton.Text = "Elementary school";
+            this.ElementaryRadioButton.UseVisualStyleBackColor = true;
             // 
             // HobbiesGroupBox
             // 
@@ -180,25 +180,15 @@ namespace Exercise_2._10
             this.HobbiesGroupBox.TabStop = false;
             this.HobbiesGroupBox.Text = "Hobies";
             // 
-            // SportCheckBox
+            // MoviesCheckBox
             // 
-            this.SportCheckBox.AutoSize = true;
-            this.SportCheckBox.Location = new System.Drawing.Point(7, 20);
-            this.SportCheckBox.Name = "SportCheckBox";
-            this.SportCheckBox.Size = new System.Drawing.Size(51, 17);
-            this.SportCheckBox.TabIndex = 0;
-            this.SportCheckBox.Text = "Sport";
-            this.SportCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // BooksCheckBox
-            // 
-            this.BooksCheckBox.AutoSize = true;
-            this.BooksCheckBox.Location = new System.Drawing.Point(7, 44);
-            this.BooksCheckBox.Name = "BooksCheckBox";
-            this.BooksCheckBox.Size = new System.Drawing.Size(56, 17);
-            this.BooksCheckBox.TabIndex = 1;
-            this.BooksCheckBox.Text = "Books";
-            this.BooksCheckBox.UseVisualStyleBackColor = true;
+            this.MoviesCheckBox.AutoSize = true;
+            this.MoviesCheckBox.Location = new System.Drawing.Point(7, 90);
+            this.MoviesCheckBox.Name = "MoviesCheckBox";
+            this.MoviesCheckBox.Size = new System.Drawing.Size(60, 17);
+            this.MoviesCheckBox.TabIndex = 3;
+            this.MoviesCheckBox.Text = "Movies";
+            this.MoviesCheckBox.UseVisualStyleBackColor = true;
             // 
             // HangoutsCheckBox
             // 
@@ -210,15 +200,25 @@ namespace Exercise_2._10
             this.HangoutsCheckBox.Text = "Hang outs";
             this.HangoutsCheckBox.UseVisualStyleBackColor = true;
             // 
-            // MoviesCheckBox
+            // BooksCheckBox
             // 
-            this.MoviesCheckBox.AutoSize = true;
-            this.MoviesCheckBox.Location = new System.Drawing.Point(7, 90);
-            this.MoviesCheckBox.Name = "MoviesCheckBox";
-            this.MoviesCheckBox.Size = new System.Drawing.Size(60, 17);
-            this.MoviesCheckBox.TabIndex = 3;
-            this.MoviesCheckBox.Text = "Movies";
-            this.MoviesCheckBox.UseVisualStyleBackColor = true;
+            this.BooksCheckBox.AutoSize = true;
+            this.BooksCheckBox.Location = new System.Drawing.Point(7, 44);
+            this.BooksCheckBox.Name = "BooksCheckBox";
+            this.BooksCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.BooksCheckBox.TabIndex = 1;
+            this.BooksCheckBox.Text = "Books";
+            this.BooksCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // SportCheckBox
+            // 
+            this.SportCheckBox.AutoSize = true;
+            this.SportCheckBox.Location = new System.Drawing.Point(7, 20);
+            this.SportCheckBox.Name = "SportCheckBox";
+            this.SportCheckBox.Size = new System.Drawing.Size(51, 17);
+            this.SportCheckBox.TabIndex = 0;
+            this.SportCheckBox.Text = "Sport";
+            this.SportCheckBox.UseVisualStyleBackColor = true;
             // 
             // SeeAllAcademicLinkLabel
             // 
@@ -246,6 +246,7 @@ namespace Exercise_2._10
             this.SubmitButton.TabIndex = 8;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // DropButton
             // 

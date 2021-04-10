@@ -16,5 +16,16 @@ namespace Exercise_2._10
         {
             InitializeComponent();
         }
+
+        private void Confirmation_Load(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Name: {RegistrationModel.Name}");
+            sb.AppendLine($"Surname: {RegistrationModel.Surname}");
+            sb.AppendLine($"Academic level: {RegistrationModel.AcademicLevel}");
+            sb.AppendLine($"Hobbies: {RegistrationModel.Hobbies}");
+
+            DataRichTextBox.Text = sb.ToString();
+        }
     }
 }
