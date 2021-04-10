@@ -45,7 +45,6 @@ namespace Exercise_2._10
             this.HangoutsCheckBox = new System.Windows.Forms.CheckBox();
             this.BooksCheckBox = new System.Windows.Forms.CheckBox();
             this.SportCheckBox = new System.Windows.Forms.CheckBox();
-            this.SeeAllAcademicLinkLabel = new System.Windows.Forms.LinkLabel();
             this.AcademicLevelsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.DropButton = new System.Windows.Forms.Button();
@@ -220,16 +219,6 @@ namespace Exercise_2._10
             this.SportCheckBox.Text = "Sport";
             this.SportCheckBox.UseVisualStyleBackColor = true;
             // 
-            // SeeAllAcademicLinkLabel
-            // 
-            this.SeeAllAcademicLinkLabel.AutoSize = true;
-            this.SeeAllAcademicLinkLabel.Location = new System.Drawing.Point(37, 304);
-            this.SeeAllAcademicLinkLabel.Name = "SeeAllAcademicLinkLabel";
-            this.SeeAllAcademicLinkLabel.Size = new System.Drawing.Size(118, 13);
-            this.SeeAllAcademicLinkLabel.TabIndex = 6;
-            this.SeeAllAcademicLinkLabel.TabStop = true;
-            this.SeeAllAcademicLinkLabel.Text = "See all academic levels";
-            // 
             // AcademicLevelsRichTextBox
             // 
             this.AcademicLevelsRichTextBox.Location = new System.Drawing.Point(40, 337);
@@ -256,6 +245,7 @@ namespace Exercise_2._10
             this.DropButton.TabIndex = 9;
             this.DropButton.Text = "Drop";
             this.DropButton.UseVisualStyleBackColor = true;
+            this.DropButton.Click += new System.EventHandler(this.DropButton_Click);
             // 
             // CloseButton
             // 
@@ -276,7 +266,6 @@ namespace Exercise_2._10
             this.Controls.Add(this.DropButton);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.AcademicLevelsRichTextBox);
-            this.Controls.Add(this.SeeAllAcademicLinkLabel);
             this.Controls.Add(this.HobbiesGroupBox);
             this.Controls.Add(this.AcademicGroupBox);
             this.Controls.Add(this.SurnameTextBox);
@@ -312,7 +301,6 @@ namespace Exercise_2._10
         private System.Windows.Forms.CheckBox HangoutsCheckBox;
         private System.Windows.Forms.CheckBox BooksCheckBox;
         private System.Windows.Forms.CheckBox SportCheckBox;
-        private System.Windows.Forms.LinkLabel SeeAllAcademicLinkLabel;
         private System.Windows.Forms.RichTextBox AcademicLevelsRichTextBox;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button DropButton;

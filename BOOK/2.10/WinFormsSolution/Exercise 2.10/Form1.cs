@@ -25,6 +25,21 @@ namespace Exercise_2._10
             RegistrationModel.Hobbies = "";
         }
 
+        private void ResetAll()
+        {
+            NameTextBox.Clear();
+            SurnameTextBox.Clear();
+            foreach (RadioButton rb in AcademicGroupBox.Controls)
+            {
+                rb.Checked = false;
+            }
+            foreach (CheckBox cb in HobbiesGroupBox.Controls)
+            {
+                cb.Checked = false;
+            }
+            AcademicLevelsRichTextBox.Clear();
+        }
+
         private void SubmitButton_Click(object sender, EventArgs e)
         {
             //assign data to appropriate properties from data model class
@@ -72,6 +87,11 @@ namespace Exercise_2._10
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DropButton_Click(object sender, EventArgs e)
+        {
+            ResetAll();
         }
     }
 }
