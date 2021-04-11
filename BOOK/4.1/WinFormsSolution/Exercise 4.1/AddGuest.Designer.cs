@@ -36,9 +36,9 @@ namespace Exercise_4._1
             this.SubmitButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.MealsGroupBox = new System.Windows.Forms.GroupBox();
-            this.BreakfastCheckBox = new System.Windows.Forms.CheckBox();
-            this.LunchCheckBox = new System.Windows.Forms.CheckBox();
             this.DinnerCheckBox = new System.Windows.Forms.CheckBox();
+            this.LunchCheckBox = new System.Windows.Forms.CheckBox();
+            this.BreakfastCheckBox = new System.Windows.Forms.CheckBox();
             this.MealsGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +100,7 @@ namespace Exercise_4._1
             this.CancelButton.TabIndex = 7;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // MealsGroupBox
             // 
@@ -113,15 +114,15 @@ namespace Exercise_4._1
             this.MealsGroupBox.TabStop = false;
             this.MealsGroupBox.Text = "Meals";
             // 
-            // BreakfastCheckBox
+            // DinnerCheckBox
             // 
-            this.BreakfastCheckBox.AutoSize = true;
-            this.BreakfastCheckBox.Location = new System.Drawing.Point(7, 20);
-            this.BreakfastCheckBox.Name = "BreakfastCheckBox";
-            this.BreakfastCheckBox.Size = new System.Drawing.Size(71, 17);
-            this.BreakfastCheckBox.TabIndex = 0;
-            this.BreakfastCheckBox.Text = "Breakfast";
-            this.BreakfastCheckBox.UseVisualStyleBackColor = true;
+            this.DinnerCheckBox.AutoSize = true;
+            this.DinnerCheckBox.Location = new System.Drawing.Point(7, 68);
+            this.DinnerCheckBox.Name = "DinnerCheckBox";
+            this.DinnerCheckBox.Size = new System.Drawing.Size(57, 17);
+            this.DinnerCheckBox.TabIndex = 2;
+            this.DinnerCheckBox.Text = "Dinner";
+            this.DinnerCheckBox.UseVisualStyleBackColor = true;
             // 
             // LunchCheckBox
             // 
@@ -133,15 +134,15 @@ namespace Exercise_4._1
             this.LunchCheckBox.Text = "Lunch";
             this.LunchCheckBox.UseVisualStyleBackColor = true;
             // 
-            // DinnerCheckBox
+            // BreakfastCheckBox
             // 
-            this.DinnerCheckBox.AutoSize = true;
-            this.DinnerCheckBox.Location = new System.Drawing.Point(7, 68);
-            this.DinnerCheckBox.Name = "DinnerCheckBox";
-            this.DinnerCheckBox.Size = new System.Drawing.Size(57, 17);
-            this.DinnerCheckBox.TabIndex = 2;
-            this.DinnerCheckBox.Text = "Dinner";
-            this.DinnerCheckBox.UseVisualStyleBackColor = true;
+            this.BreakfastCheckBox.AutoSize = true;
+            this.BreakfastCheckBox.Location = new System.Drawing.Point(7, 20);
+            this.BreakfastCheckBox.Name = "BreakfastCheckBox";
+            this.BreakfastCheckBox.Size = new System.Drawing.Size(71, 17);
+            this.BreakfastCheckBox.TabIndex = 0;
+            this.BreakfastCheckBox.Text = "Breakfast";
+            this.BreakfastCheckBox.UseVisualStyleBackColor = true;
             // 
             // AddGuest
             // 

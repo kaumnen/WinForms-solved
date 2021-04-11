@@ -63,5 +63,10 @@ namespace Exercise_4._1
             MessageBox.Show("File Guest_list.txt has been successfully saved!", "Info", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

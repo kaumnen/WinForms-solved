@@ -82,6 +82,7 @@ namespace Exercise_4._1
             this.CloseButton.TabIndex = 4;
             this.CloseButton.Text = "Close";
             this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // Form1
             // 
