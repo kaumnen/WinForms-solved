@@ -52,6 +52,7 @@ namespace Exercise_4._1
             this.AddGuestButton.TabIndex = 1;
             this.AddGuestButton.Text = "Add guest";
             this.AddGuestButton.UseVisualStyleBackColor = true;
+            this.AddGuestButton.Click += new System.EventHandler(this.AddGuestButton_Click);
             // 
             // RejectButton
             // 

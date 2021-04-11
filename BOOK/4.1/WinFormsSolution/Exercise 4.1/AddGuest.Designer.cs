@@ -52,6 +52,12 @@ namespace Exercise_4._1
             // MembersComboBox
             // 
             this.MembersComboBox.FormattingEnabled = true;
+            this.MembersComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.MembersComboBox.Location = new System.Drawing.Point(99, 56);
             this.MembersComboBox.Name = "MembersComboBox";
             this.MembersComboBox.Size = new System.Drawing.Size(47, 21);
@@ -77,12 +83,14 @@ namespace Exercise_4._1
             // 
             // SubmitButton
             // 
+            this.SubmitButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.SubmitButton.Location = new System.Drawing.Point(19, 237);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(75, 23);
             this.SubmitButton.TabIndex = 6;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // CancelButton
             // 

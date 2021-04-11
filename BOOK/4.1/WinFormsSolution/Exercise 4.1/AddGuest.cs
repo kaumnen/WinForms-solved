@@ -16,5 +16,19 @@ namespace Exercise_4._1
         {
             InitializeComponent();
         }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            GuestModel.Surname = SurnameTextBox.Text;
+            GuestModel.Members = Convert.ToInt32(MembersComboBox.SelectedItem.ToString());
+            GuestModel.Meals = "";
+            foreach (CheckBox cb in MealsGroupBox.Controls)
+            {
+                if (cb.Checked)
+                {
+                    GuestModel.Meals += cb.Text + "\r\n";
+                }
+            }
+        }
     }
 }
