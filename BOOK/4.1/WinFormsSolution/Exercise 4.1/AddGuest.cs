@@ -12,21 +12,27 @@ namespace Exercise_4._1
 {
     public partial class AddGuest : Form
     {
+        public string Surname { get; set; }
+        public int Members { get; set; }
+        public string Meals { get; set; }
+
         public AddGuest()
         {
             InitializeComponent();
         }
 
+        internal static GuestModel gm = new GuestModel();
+
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            GuestModel.Surname = SurnameTextBox.Text;
-            GuestModel.Members = Convert.ToInt32(MembersComboBox.SelectedItem.ToString());
-            GuestModel.Meals = "";
+            Surname = SurnameTextBox.Text;
+            Members = Convert.ToInt32(MembersComboBox.SelectedItem.ToString());
+            Meals = "";
             foreach (CheckBox cb in MealsGroupBox.Controls)
             {
                 if (cb.Checked)
                 {
-                    GuestModel.Meals += cb.Text + "\r\n";
+                    Meals += cb.Text + "\r\n";
                 }
             }
         }
