@@ -62,6 +62,7 @@ namespace Exercise_4._1
             this.RejectButton.TabIndex = 2;
             this.RejectButton.Text = "Reject guest";
             this.RejectButton.UseVisualStyleBackColor = true;
+            this.RejectButton.Click += new System.EventHandler(this.RejectButton_Click);
             // 
             // ExportButton
             // 

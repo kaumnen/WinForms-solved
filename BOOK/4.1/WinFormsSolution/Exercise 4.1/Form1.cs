@@ -39,5 +39,12 @@ namespace Exercise_4._1
                 printGuests();
             }
         }
+
+        private void RejectButton_Click(object sender, EventArgs e)
+        {
+            sgm.Pop();
+            printGuests();
+            MessageBox.Show("Guests have left!", "Information");
+        }
     }
 }
