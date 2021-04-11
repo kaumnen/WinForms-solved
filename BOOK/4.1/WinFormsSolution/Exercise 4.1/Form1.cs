@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,22 @@ namespace Exercise_4._1
             sgm.Pop();
             printGuests();
             MessageBox.Show("Guests have left!", "Information");
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw = new StreamWriter("Guest_list.txt");
+
+            sw.WriteLine("Guest list:");
+
+            foreach (GuestModel gm in sgm)
+            {
+                sw.Write(gm.ToString());
+            }
+
+            sw.Close();
+            MessageBox.Show("File Guest_list.txt has been successfully saved!", "Info", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
     }
 }
