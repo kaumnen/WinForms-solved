@@ -1,0 +1,1 @@
+﻿.NET Framework 4.8 used. Exercise found at page 269, numeration - 4.1.
