@@ -151,7 +151,7 @@ namespace Exercise_4._2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AdInput";
-            this.Text = "AdInput";
+            this.Text = "Ad input";
             this.AcademicGroupBox.ResumeLayout(false);
             this.AcademicGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YOENumeric)).EndInit();
