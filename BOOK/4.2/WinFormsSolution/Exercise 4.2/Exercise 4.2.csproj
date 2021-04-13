@@ -52,6 +52,7 @@
     <Compile Include="AdInput.Designer.cs">
       <DependentUpon>AdInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdModel.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
