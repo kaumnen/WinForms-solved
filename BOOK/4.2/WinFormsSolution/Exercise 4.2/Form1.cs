@@ -42,5 +42,10 @@ namespace Exercise_4._2
                 InputAds();
             }
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
