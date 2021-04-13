@@ -54,6 +54,7 @@ namespace Exercise_4._2
             this.DeleteAdButton.TabIndex = 2;
             this.DeleteAdButton.Text = "Delete ad";
             this.DeleteAdButton.UseVisualStyleBackColor = true;
+            this.DeleteAdButton.Click += new System.EventHandler(this.DeleteAdButton_Click);
             // 
             // ExportButton
             // 

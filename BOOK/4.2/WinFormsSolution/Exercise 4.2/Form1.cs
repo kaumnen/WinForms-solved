@@ -47,5 +47,21 @@ namespace Exercise_4._2
         {
             this.Close();
         }
+
+        private void DeleteAdButton_Click(object sender, EventArgs e)
+        {
+            int lastIndex = AdsListBox.Items.Count - 1;
+            if (lastIndex >= 0)
+            {
+                Ads.RemoveAt(lastIndex);
+                AdsListBox.Items.Clear();
+                InputAds();
+                MessageBox.Show("Last ad has been deleted!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("There is nothing to delete!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
