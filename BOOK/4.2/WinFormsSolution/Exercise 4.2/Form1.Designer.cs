@@ -29,20 +29,12 @@ namespace Exercise_4._2
         /// </summary>
         private void InitializeComponent()
         {
-            this.AdsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.NewAddButton = new System.Windows.Forms.Button();
             this.DeleteAdButton = new System.Windows.Forms.Button();
             this.ExportButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
+            this.AdsListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // AdsRichTextBox
-            // 
-            this.AdsRichTextBox.Location = new System.Drawing.Point(12, 12);
-            this.AdsRichTextBox.Name = "AdsRichTextBox";
-            this.AdsRichTextBox.Size = new System.Drawing.Size(517, 192);
-            this.AdsRichTextBox.TabIndex = 0;
-            this.AdsRichTextBox.Text = "";
             // 
             // NewAddButton
             // 
@@ -80,16 +72,24 @@ namespace Exercise_4._2
             this.CloseButton.Text = "Close";
             this.CloseButton.UseVisualStyleBackColor = true;
             // 
+            // AdsListBox
+            // 
+            this.AdsListBox.FormattingEnabled = true;
+            this.AdsListBox.Location = new System.Drawing.Point(12, 13);
+            this.AdsListBox.Name = "AdsListBox";
+            this.AdsListBox.Size = new System.Drawing.Size(517, 212);
+            this.AdsListBox.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 276);
+            this.Controls.Add(this.AdsListBox);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ExportButton);
             this.Controls.Add(this.DeleteAdButton);
             this.Controls.Add(this.NewAddButton);
-            this.Controls.Add(this.AdsRichTextBox);
             this.Name = "Form1";
             this.Text = "Job ads";
             this.ResumeLayout(false);
@@ -97,12 +97,11 @@ namespace Exercise_4._2
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox AdsRichTextBox;
         private System.Windows.Forms.Button NewAddButton;
         private System.Windows.Forms.Button DeleteAdButton;
         private System.Windows.Forms.Button ExportButton;
         private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.ListBox AdsListBox;
     }
 }
 
