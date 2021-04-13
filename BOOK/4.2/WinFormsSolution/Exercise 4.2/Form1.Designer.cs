@@ -44,6 +44,7 @@ namespace Exercise_4._2
             this.NewAddButton.TabIndex = 1;
             this.NewAddButton.Text = "New ad";
             this.NewAddButton.UseVisualStyleBackColor = true;
+            this.NewAddButton.Click += new System.EventHandler(this.NewAddButton_Click);
             // 
             // DeleteAdButton
             // 

@@ -17,6 +17,26 @@ namespace Exercise_4._2
             InitializeComponent();
         }
 
+        public string Position { get; set; }
+        public string AcademicLevel { get; set; }
+        public int YOE { get; set; }
+
+        public void PopulateProperties()
+        {
+            Position = PositionTextBox.Text;
+
+            foreach (RadioButton rb in AcademicGroupBox.Controls)
+            {
+                if (rb.Checked)
+                {
+                    AcademicLevel = rb.Text;
+                    break;
+                }
+            }
+
+            YOE = Convert.ToInt16(YOENumeric.Text);
+        }
+
         private void YOENumeric_Validating(object sender, CancelEventArgs e)
         {
             if (Convert.ToInt32(YOENumeric.Text) > 40)
@@ -31,6 +51,12 @@ namespace Exercise_4._2
                 e.Cancel = false;
                 numericErrorProvider.Clear();
             }
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            PopulateProperties();
+            DialogResult = DialogResult.OK;
         }
     }
 }
