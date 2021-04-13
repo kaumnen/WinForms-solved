@@ -29,18 +29,21 @@ namespace Exercise_4._2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AcademicGroupBox = new System.Windows.Forms.GroupBox();
-            this.PrimaryRadioButton = new System.Windows.Forms.RadioButton();
-            this.HighRadioButton = new System.Windows.Forms.RadioButton();
             this.CollegeRadioButton = new System.Windows.Forms.RadioButton();
+            this.HighRadioButton = new System.Windows.Forms.RadioButton();
+            this.PrimaryRadioButton = new System.Windows.Forms.RadioButton();
             this.PositionTextBox = new System.Windows.Forms.TextBox();
             this.YOENumeric = new System.Windows.Forms.NumericUpDown();
             this.SubmitButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.numericErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.AcademicGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YOENumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,16 +76,16 @@ namespace Exercise_4._2
             this.AcademicGroupBox.TabStop = false;
             this.AcademicGroupBox.Text = "Academic level";
             // 
-            // PrimaryRadioButton
+            // CollegeRadioButton
             // 
-            this.PrimaryRadioButton.AutoSize = true;
-            this.PrimaryRadioButton.Location = new System.Drawing.Point(7, 20);
-            this.PrimaryRadioButton.Name = "PrimaryRadioButton";
-            this.PrimaryRadioButton.Size = new System.Drawing.Size(59, 17);
-            this.PrimaryRadioButton.TabIndex = 0;
-            this.PrimaryRadioButton.TabStop = true;
-            this.PrimaryRadioButton.Text = "Primary";
-            this.PrimaryRadioButton.UseVisualStyleBackColor = true;
+            this.CollegeRadioButton.AutoSize = true;
+            this.CollegeRadioButton.Location = new System.Drawing.Point(7, 68);
+            this.CollegeRadioButton.Name = "CollegeRadioButton";
+            this.CollegeRadioButton.Size = new System.Drawing.Size(60, 17);
+            this.CollegeRadioButton.TabIndex = 2;
+            this.CollegeRadioButton.TabStop = true;
+            this.CollegeRadioButton.Text = "College";
+            this.CollegeRadioButton.UseVisualStyleBackColor = true;
             // 
             // HighRadioButton
             // 
@@ -95,16 +98,16 @@ namespace Exercise_4._2
             this.HighRadioButton.Text = "High";
             this.HighRadioButton.UseVisualStyleBackColor = true;
             // 
-            // CollegeRadioButton
+            // PrimaryRadioButton
             // 
-            this.CollegeRadioButton.AutoSize = true;
-            this.CollegeRadioButton.Location = new System.Drawing.Point(7, 68);
-            this.CollegeRadioButton.Name = "CollegeRadioButton";
-            this.CollegeRadioButton.Size = new System.Drawing.Size(60, 17);
-            this.CollegeRadioButton.TabIndex = 2;
-            this.CollegeRadioButton.TabStop = true;
-            this.CollegeRadioButton.Text = "College";
-            this.CollegeRadioButton.UseVisualStyleBackColor = true;
+            this.PrimaryRadioButton.AutoSize = true;
+            this.PrimaryRadioButton.Location = new System.Drawing.Point(7, 20);
+            this.PrimaryRadioButton.Name = "PrimaryRadioButton";
+            this.PrimaryRadioButton.Size = new System.Drawing.Size(59, 17);
+            this.PrimaryRadioButton.TabIndex = 0;
+            this.PrimaryRadioButton.TabStop = true;
+            this.PrimaryRadioButton.Text = "Primary";
+            this.PrimaryRadioButton.UseVisualStyleBackColor = true;
             // 
             // PositionTextBox
             // 
@@ -119,6 +122,7 @@ namespace Exercise_4._2
             this.YOENumeric.Name = "YOENumeric";
             this.YOENumeric.Size = new System.Drawing.Size(52, 20);
             this.YOENumeric.TabIndex = 4;
+            this.YOENumeric.Validating += new System.ComponentModel.CancelEventHandler(this.YOENumeric_Validating);
             // 
             // SubmitButton
             // 
@@ -138,6 +142,10 @@ namespace Exercise_4._2
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             // 
+            // numericErrorProvider
+            // 
+            this.numericErrorProvider.ContainerControl = this;
+            // 
             // AdInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +163,7 @@ namespace Exercise_4._2
             this.AcademicGroupBox.ResumeLayout(false);
             this.AcademicGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YOENumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +181,6 @@ namespace Exercise_4._2
         private System.Windows.Forms.NumericUpDown YOENumeric;
         private System.Windows.Forms.Button SubmitButton;
         private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.ErrorProvider numericErrorProvider;
     }
 }

@@ -16,5 +16,21 @@ namespace Exercise_4._2
         {
             InitializeComponent();
         }
+
+        private void YOENumeric_Validating(object sender, CancelEventArgs e)
+        {
+            if (Convert.ToInt32(YOENumeric.Text) > 40)
+            {
+                e.Cancel = true;
+                numericErrorProvider.SetError(YOENumeric, "You can not have more than 40 YOE!");
+
+                YOENumeric.Select(0, YOENumeric.Text.Length);
+            }
+            else
+            {
+                e.Cancel = false;
+                numericErrorProvider.Clear();
+            }
+        }
     }
 }
