@@ -64,6 +64,7 @@ namespace Exercise_4._2
             this.ExportButton.TabIndex = 3;
             this.ExportButton.Text = "Export to txt";
             this.ExportButton.UseVisualStyleBackColor = true;
+            this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
             // 
             // CloseButton
             // 

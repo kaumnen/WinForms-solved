@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,17 @@ namespace Exercise_4._2
             {
                 MessageBox.Show("There is nothing to delete!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw = new StreamWriter("../../Ads.txt");
+            foreach (AdModel am in AdsListBox.Items)
+            {
+                sw.Write(am.ToString());
+            }
+            sw.Close();
+            MessageBox.Show("Ads have been successfully saved!");
         }
     }
 }
